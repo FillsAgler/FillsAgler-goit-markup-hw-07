@@ -13,13 +13,14 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Студия</title>
 </head>
 
 <body>
   <!-- Шапка сайта -->
   <header class="header">
-    <div class="container header-field">
+    <div class="container container_flex">
         <nav class="header__nav">
           <!--Навігація на гол сторінку-->
           <a class="logo" href="index.html">Web<span class="logo-studio">Studio</span>
@@ -33,16 +34,16 @@
         </nav>
         <!--Контактна інформація-->
         <ul class="header__contacts">
-          <li class="header__contacts-item">
-            <a class="header__contacts-link" href="mailto:info@devstudio.com">
-              <svg class="header__contacts-icon" width="16" height="12">
+          <li class="header__item">
+            <a class="header__link" href="mailto:info@devstudio.com">
+              <svg class="header__icon" width="16" height="12">
                 <use href="./images/sprites/svg/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a>
           </li>
-          <li class="header__contacts-item">
-            <a class="header__contacts-link" href="tel:+380961111111">
-              <svg class="header__contacts-icon" width="10" height="16">
+          <li class="header__item">
+            <a class="header__link" href="tel:+380961111111">
+              <svg class="header__icon" width="10" height="16">
                 <use href="./images/sprites/svg/sprite.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11</a>
@@ -60,8 +61,8 @@
 
     <!-- Опис переваг -->
     <section class="feature">
-      <div class="container header-field">
-        <h2 class="feature-head" hidden>Особенности</h2>
+      <div class="container">
+        <h2 class="section-title" hidden>Особенности</h2>
           <ul class="feature-list">
             <li class="feature-list__item">
               <div class="feature-list__tumb">
@@ -117,7 +118,7 @@
     <!-- Опис занять -->
     <section class="narrative">
       <div class="container">
-        <h2 class="narrative__head head">Чем мы занимаемся</h2>
+        <h2 class="narrative__head section-title">Чем мы занимаемся</h2>
         <ul class="narrative__list">
           <li class="narrative__list-item">
             <img class="image" src="./images/box/box1.jpg" alt="Робота з кодом" width="370" />
@@ -138,7 +139,7 @@
     <!-- Опис команди -->
     <section class="team">
       <div class="team-section container">
-        <h2 class="team__head head">Наша команда</h2>
+        <h2 class="team__head section-title">Наша команда</h2>
           <ul class="team__list">
 
             <li class="team-item">
@@ -296,36 +297,36 @@
 
     </section>
     <section class="client">
-      <h2 class="client__head head">Постоянные клиенты</h2>
+      <h2 class="client__head section-title">Постоянные клиенты</h2>
       <div class="container">
         <ul class="client-list">
           <li class="client-list__item">
-            <svg class="client-item__icon" width="41" height="47">
+            <svg class="client-list__icon" width="41" height="47">
               <use href="./images/sprites/svg/sprite.svg#icon-union" />
             </svg>
           </li>
           <li class="client-list__item">
-            <svg class="client-item__icon" width="40" height="52">
+            <svg class="client-list__icon" width="40" height="52">
               <use href="./images/sprites/svg/sprite.svg#icon-company-tag" />
             </svg>
           </li>
           <li class="client-list__item">
-            <svg class="client-item__icon" width="43" height="42">
+            <svg class="client-list__icon" width="43" height="42">
               <use href="./images/sprites/svg/sprite.svg#icon-company" />
             </svg>
           </li>
           <li class="client-list__item">
-            <svg class="client-item__icon" width="85" height="41">
+            <svg class="client-list__icon" width="85" height="41">
               <use href="./images/sprites/svg/sprite.svg#icon-foster" />
             </svg>
           </li>
           <li class="client-list__item">
-            <svg class="client-item__icon" width="63" height="45">
+            <svg class="client-list__icon" width="63" height="45">
               <use href="./images/sprites/svg/sprite.svg#icon-brand" />
             </svg>
           </li>
           <li class="client-list__item">
-            <svg class="client-item__icon" width="94" height="44">
+            <svg class="client-list__icon" width="94" height="44">
               <use href="./images/sprites/svg/sprite.svg#icon-tagline" />
             </svg>
           </li>
@@ -385,7 +386,7 @@
         <span class="footer-social__title">Подпишитесь на рассылку</span>
         <form class="footer-form" name="footer-form">
             <label class="footer-form__field"><input type="text" class="footer-form__letter-input" placeholder="E-mail" /></label>
-            <button class="footer__button btn" type="submit">Подписаться</button>
+            <button class="footer__button btn btn_send-icon" type="submit">Подписаться</button>
         </form>
       </div>
     </div>
@@ -395,8 +396,8 @@
     <div class="modal">
       <button class="modal__close" type="button" data-modal-close><span class="modal__icon">&#10005;</span></button>   
     
-      <form class="modal-form" action="" method="GET">
-        <p class="modal-form__title">Оставьте свои данные, мы вам перезвоним</p>
+      <form class="form" action="" method="GET">
+        <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
         
           <div class="form-field">
             <label class="form-field__input-text" for="name-input">Имя</label>
@@ -444,10 +445,11 @@
                 <use href="./images/sprites/svg/sprite.svg#icon-Vector3"></use>
               </svg>
             </div> 
-
-            <p class="policy__text">Соглашаюсь с рассилкой и принимаю</p> 
-            <span class="policy__icon">&nbsp;</span>
-            <a class="policy__link" href="#">Условия договора</a>
+            <span class="policy">
+              <p class="policy__text">Соглашаюсь с рассилкой и принимаю</p> 
+              <span class="policy__icon">&nbsp;</span>
+              <a class="policy__link" href="#">Условия договора</a>
+            </span>
           </label>
         </div>
       <button class="form-button btn" type="submit">Отправить</button>

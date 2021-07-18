@@ -13,14 +13,14 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/main.css">
   <title>Портфолио</title>
 </head>
 
 <body>
   <!-- Шапка сайта -->
   <header class="header">
-    <div class="container header-field">
+    <div class="container container_flex">
         <nav class="header__nav">
           <!--Навігація на гол сторінку-->
           <a class="logo" href="index.html">Web<span class="logo-studio">Studio</span>
@@ -34,16 +34,16 @@
         </nav>
         <!--Контактна інформація-->
         <ul class="header__contacts">
-          <li class="header__contacts-item">
-            <a class="header__contacts-link" href="mailto:info@devstudio.com">
-              <svg class="header__contacts-icon" width="16" height="12">
+          <li class="header__item">
+            <a class="header__link" href="mailto:info@devstudio.com">
+              <svg class="header__icon" width="16" height="12">
                 <use href="./images/sprites/svg/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a>
           </li>
-          <li class="header__contacts-item">
-            <a class="header__contacts-link" href="tel:+380961111111">
-              <svg class="header__contacts-icon" width="10" height="16">
+          <li class="header__item">
+            <a class="header__link" href="tel:+380961111111">
+              <svg class="header__icon" width="10" height="16">
                 <use href="./images/sprites/svg/sprite.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11</a>
@@ -56,122 +56,122 @@
   <section class="portfolio">
     <div class="container">
       <ul class="filter-list">
-        <li class=filter-list__item"><button class="filter-list__button btn" type="button">Все</button></li>
-        <li class="filter-list__item"><button class="filter-list__button btn" type="button">Веб-сайты</button></li>
-        <li class="filter-list__item"><button class="filter-list__button btn" type="button">Приложения</button></li>
-        <li class="filter-list__item"><button class="filter-list__button btn" type="button">Дизайн</button></li>
-        <li class="filter-list__item"><button class="filter-list__button btn" type="button">Маркетинг</button></li>
+        <li class=filter-list__item"><button class="filter-list__button btn btn_filter" type="button">Все</button></li>
+        <li class="filter-list__item"><button class="filter-list__button btn btn_filter" type="button">Веб-сайты</button></li>
+        <li class="filter-list__item"><button class="filter-list__button btn btn_filter" type="button">Приложения</button></li>
+        <li class="filter-list__item"><button class="filter-list__button btn btn_filter" type="button">Дизайн</button></li>
+        <li class="filter-list__item"><button class="filter-list__button btn btn_filter" type="button">Маркетинг</button></li>
       </ul>
 
       <ul class="projects-list">
         <li class="projects-list__item">
             <a class="projects-description-tumb" href="#">
-              <div class="project-list__description">  
+              <div class="projects-list__description">  
                 <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
               </div>  
-              <img class="project-list__image  image" src="./images/project/img1.jpg" alt="Изображение Игоря Демьяненко" width="370" />
+              <img class="projects-list__image  image" src="./images/project/img1.jpg" alt="Изображение Игоря Демьяненко" width="370" />
             </a>
             <div>
-              <h3 class="project-list__title">Технокряк</h3>
-              <p class="project-list__text">Веб-сайт</p>
+              <h3 class="projects-list__title">Технокряк</h3>
+              <p class="projects-list__text">Веб-сайт</p>
             </div>
         </li>
 
         <li class="projects-list__item">
           <a class="projects-description-tumb" href="#">
-            <div class="project-list__description">  
+            <div class="projects-list__description">  
               <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>  
-            <img class="project-list__image image" src="./images/project/img2.jpg" alt="Изображение Ольги Репиной" width="370" />
+            <img class="projects-list__image image" src="./images/project/img2.jpg" alt="Изображение Ольги Репиной" width="370" />
           </a>
           <div>
-            <h3 class="project-list__title">Постер New Orlean vs Golden Star</h3>
-            <p class="project-list__text">Дизайн</p>
+            <h3 class="projects-list__title">Постер New Orlean vs Golden Star</h3>
+            <p class="projects-list__text">Дизайн</p>
           </div>
         </li>
 
         <li class="projects-list__item">
           <a class="projects-description-tumb" href="#">
-            <div class="project-list__description">  
+            <div class="projects-list__description">  
               <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>  
-            <img class="project-list__image image" src="./images/project/img3.jpg" alt="Изображение Николая Тарасова" width="370" />
+            <img class="projects-list__image image" src="./images/project/img3.jpg" alt="Изображение Николая Тарасова" width="370" />
           </a>
           <div>
-            <h3 class="project-list__title">Ресторан Seafood</h3>
-            <p class="project-list__text">Приложение</p>
+            <h3 class="projects-list__title">Ресторан Seafood</h3>
+            <p class="projects-list__text">Приложение</p>
           </div>
         </li>
         <li class="projects-list__item">
           <a class="projects-description-tumb" href="#">
-            <div class="project-list__description">  
+            <div class="projects-list__description">  
               <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>  
-            <img class="project-list__image image" src="./images/project/img4.jpg" alt="Изображение Михаила Ермакова" width="370" />
+            <img class="projects-list__image image" src="./images/project/img4.jpg" alt="Изображение Михаила Ермакова" width="370" />
           </a>
           <div>
-            <h3 class="project-list__title">Проект Prime</h3>
-            <p class="project-list__text">Маркетинг</p>
+            <h3 class="projects-list__title">Проект Prime</h3>
+            <p class="projects-list__text">Маркетинг</p>
           </div>
         </li>
         <li class="projects-list__item">
           <a class="projects-description-tumb" href="#">
-            <div class="project-list__description">  
+            <div class="projects-list__description">  
               <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>  
-            <img class="project-list__image image" src="./images/project/img5.jpg" alt="Изображение Михаила Ермакова" width="370" />
+            <img class="projects-list__image image" src="./images/project/img5.jpg" alt="Изображение Михаила Ермакова" width="370" />
           </a>
           <div>
-            <h3 class="project-list__title">Проект Boxes</h3>
-            <p class="project-list__text">Приложение</p>
+            <h3 class="projects-list__title">Проект Boxes</h3>
+            <p class="projects-list__text">Приложение</p>
           </div>
         </li>
         <li class="projects-list__item">
           <a class="projects-description-tumb" href="#">
-            <div class="project-list__description">  
+            <div class="projects-list__description">  
               <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>  
-            <img class="project-list__image image" src="./images/project/img6.jpg" alt="Изображение Михаила Ермакова" width="370" />
+            <img class="projects-list__image image" src="./images/project/img6.jpg" alt="Изображение Михаила Ермакова" width="370" />
           </a>
           <div>
-            <h3 class="project-list__title">Inspiration has no Borders</h3>
-            <p class="project-list__text">Веб-сайт</p>
+            <h3 class="projects-list__title">Inspiration has no Borders</h3>
+            <p class="projects-list__text">Веб-сайт</p>
           </div>
         </li>
         <li class="projects-list__item">
           <a class="projects-description-tumb" href="#">
-            <div class="project-list__description">  
+            <div class="projects-list__description">  
               <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div> 
-            <img class="project-list__image image" src="./images/project/img7.jpg" alt="Изображение Михаила Ермакова" width="370" />
+            <img class="projects-list__image image" src="./images/project/img7.jpg" alt="Изображение Михаила Ермакова" width="370" />
           </a>
           <div>
-            <h3 class="project-list__title">Издание Limited Edition</h3>
-            <p class="project-list__text">Дизайн</p>
+            <h3 class="projects-list__title">Издание Limited Edition</h3>
+            <p class="projects-list__text">Дизайн</p>
           </div>
         </li>
         <li class="projects-list__item">
           <a class="projects-description-tumb" href="#">
-            <div class="project-list__description">  
+            <div class="projects-list__description">  
               <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>  
-            <img class="project-list__image image" src="./images/project/img8.jpg" alt="Изображение Михаила Ермакова" width="370" />
+            <img class="projects-list__image image" src="./images/project/img8.jpg" alt="Изображение Михаила Ермакова" width="370" />
           </a>
           <div>
-            <h3 class="project-list__title">Проект LAB</h3>
-            <p class="project-list__text">Маркетинг</p>
+            <h3 class="projects-list__title">Проект LAB</h3>
+            <p class="projects-list__text">Маркетинг</p>
           </div>
         </li>
         <li class="projects-list__item">
           <a class="projects-description-tumb" href="#">
-            <div class="project-list__description">  
+            <div class="projects-list__description">  
               <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>  
-            <img class="project-list__image image" src="./images/project/img9.jpg" alt="Изображение Михаила Ермакова" width="370" />
+            <img class="projects-list__image image" src="./images/project/img9.jpg" alt="Изображение Михаила Ермакова" width="370" />
           </a>
           <div>
-            <h3 class="project-list__title">Growing Business</h3>
-            <p class="project-list__text">Приложение</p>
+            <h3 class="projects-list__title">Growing Business</h3>
+            <p class="projects-list__text">Приложение</p>
           </div>
         </li>
       </ul>
@@ -230,7 +230,6 @@
         <span class="footer-social__title">Подпишитесь на рассылку</span>
         <form class="footer-form" name="footer-form">
             <label class="footer-form__field"><input type="text" class="footer-form__letter-input" placeholder="E-mail" /></label>
-            <button class="footer__button btn" type="submit">Подписаться</button>
         </form>
       </div>
     </div>
