@@ -499,7 +499,7 @@ body {
   color: var(--title-text-color);
 }
 
-.btn_filterhover, .btn_filterfocus, .btn_filteractive {
+.btn_filter:hover, .btn_filter:focus, .btn_filter:active {
   color: var(--white-color);
   background-color: var(--button-background-color);
   -webkit-box-shadow: var(--shadow-button);

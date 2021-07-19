@@ -31,6 +31,7 @@
    background-image: url("../images/sprites/svg/send.svg");
    }
 }
+
 .btn_filter {
    display: block;
    padding: 6px 22px 6px 22px;
@@ -39,9 +40,9 @@
    letter-spacing: 0.03em;
    background-color: #f5f4fa;
    color: var(--title-text-color);
-   &hover,
-   &focus,
-   &active {
+   &:hover,
+   &:focus,
+   &:active{
       color: var(--white-color);
       background-color: var(--button-background-color);
       box-shadow: var(--shadow-button);
